@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import PropTypes from 'prop-types';
+
 
 const StatisticsBlock = styled.ul`
 width:80%;
@@ -29,3 +31,11 @@ export default function Statistics({ good, neutral, bad, total, positivePercenta
         </StatisticsBlock>
     )
 }
+
+Statistics.propTypes = {
+    good: PropTypes.number.isRequired,
+    neutral: PropTypes.number.isRequired,
+    bad: PropTypes.number.isRequired,
+    total: PropTypes.number.isRequired,
+    positivePercentage: PropTypes.number.isRequired
+};

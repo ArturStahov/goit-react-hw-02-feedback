@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import PropTypes from 'prop-types';
 
 const OptionsBlock = styled.div`
 padding-bottom:25px;
@@ -29,3 +30,7 @@ export default function FeedbackOptions({ onLeaveFeedback }) {
         </OptionsBlock>
     )
 }
+
+FeedbackOptions.propTypes = {
+    onLeaveFeedback: PropTypes.func.isRequired
+};

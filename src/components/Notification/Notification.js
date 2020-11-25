@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import PropTypes from 'prop-types';
 
 const NotificationTitle = styled.h3`
 width:100%;
@@ -18,3 +18,7 @@ export default function Notification({ title }) {
         </>
     )
 }
+
+Notification.propTypes = {
+    title: PropTypes.string
+};

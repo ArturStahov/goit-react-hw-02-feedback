@@ -1,24 +1,7 @@
 import React from 'react'
-import styled from 'styled-components'
+import { StatisticsBlock, StatisticsItem } from './StyledComponents'
 import PropTypes from 'prop-types';
 
-
-const StatisticsBlock = styled.ul`
-width:80%;
-display:flex;
-flex-wrap:wrap;
-margin:0 auto;
-`
-const StatisticsItem = styled.li`
-width:100%;
-text-align:center;
-font-size:0.8rem;
-color:black;
-font-weight:500;
-&:not(:last-child){
-    margin-bottom:15px;
-}
-`
 
 export default function Statistics({ good, neutral, bad, total, positivePercentage }) {
     return (

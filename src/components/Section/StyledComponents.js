@@ -1,6 +1,4 @@
-import React from 'react'
 import styled from 'styled-components'
-import PropTypes from 'prop-types';
 
 const PageSection = styled.section`
 padding-top:25px;
@@ -21,17 +19,4 @@ color: red;
 text-transform:uppercase;
 margin-bottom:30px;
 `
-
-export default function Section({ title, children }) {
-    return (
-        <PageSection>
-            <SectionTitle>{title}</SectionTitle>
-            {children}
-        </PageSection>
-    )
-}
-
-
-Section.propTypes = {
-    title: PropTypes.string
-};
+export { PageSection, SectionTitle }
